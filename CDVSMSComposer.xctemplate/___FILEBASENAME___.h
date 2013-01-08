@@ -3,6 +3,9 @@
 //
 //  Created by Grant Sanders on 12/25/2010.
 
+//  ___FILEBASENAME___ Template Created Jan 7 2013
+//  Copyright 2013 @RandyMcMillan
+
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
 

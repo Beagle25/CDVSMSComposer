@@ -1,4 +1,4 @@
-CDVEmailComposer
+CDVSMSComposer
 ===
 
 Cordova (iOS) Xcode Plugin Template
@@ -9,29 +9,29 @@ Cordova (iOS) Xcode Plugin Template
 
 ###Installation:
     $ cd ~/Library/Developer/Xcode/Templates/File\ Templates
-    $ git clone https://github.com/RandyMcMillan/CDVEmailComposer.git
+    $ git clone https://github.com/RandyMcMillan/CDVSMSComposer.git
 
-![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot.png)
+![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot.png)
 
 ###Usage:
 ####Open your Cordova (iOS) Xcode Project
 
 * Press `<COMMAND+n>`    
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot2.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot2.png)  
 
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot3.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot3.png)  
 
 * Copy the ___FILEBASENAME___.js file to your /www folder
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot4.png)
+    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot4.png)
     
-[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/index.html)
 
 ####Add to www/index.html
 
-`<script type="text/javascript" charset="utf-8" src="CDVPDFViewer.js"></script>`
+`<script type="text/javascript" charset="utf-8" src="CDVSMSComposer.js"></script>`
 
 
 
@@ -54,14 +54,14 @@ Cordova (iOS) Xcode Plugin Template
 [Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
 
 
-    cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
+    cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", [args]);
 
 ####or
 
     function show () {
                     
             var args;
-            cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
+            cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", [args]);
                     
                 }
 

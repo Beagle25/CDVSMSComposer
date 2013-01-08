@@ -9,7 +9,7 @@
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMessageComposeViewController.h>
 
-@interface SMSComposer : CDVPlugin <MFMessageComposeViewControllerDelegate>{}
+@interface ___FILEBASENAME___ : CDVPlugin <MFMessageComposeViewControllerDelegate>{}
 
 - (void)showSMSComposer:(NSArray *)arguments withDict:(NSDictionary *)options;
 @end

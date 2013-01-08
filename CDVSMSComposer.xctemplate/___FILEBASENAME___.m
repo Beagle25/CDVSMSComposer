@@ -5,13 +5,13 @@
 //  Created by Grant Sanders on 12/25/2010.
 //
 
-#import "SMSComposer.h"
+#import "___FILEBASENAME___.h"
 
-@implementation SMSComposer
+@implementation ___FILEBASENAME___
 
 - (CDVPlugin *)initWithWebView:(UIWebView *)theWebView
 {
-	self = (SMSComposer *)[super initWithWebView:theWebView];
+	self = (___FILEBASENAME___ *)[super initWithWebView:theWebView];
 	return self;
 }
 

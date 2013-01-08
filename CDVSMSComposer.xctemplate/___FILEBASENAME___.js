@@ -4,12 +4,12 @@
  * 
  * @constructor
  */
-function SMSComposer()
+function ___FILEBASENAME___()
 {
 	this.resultCallback = null;
 }
 
-SMSComposer.ComposeResultType =
+___FILEBASENAME___.ComposeResultType =
 {
 Cancelled:0,
 Sent:1,
@@ -17,7 +17,7 @@ Failed:2,
 NotSent:3
 }
 
-SMSComposer.prototype.showSMSComposer = function(toRecipients, body)
+___FILEBASENAME___.prototype.showSMSComposer = function(toRecipients, body)
 {
 	
 	var args = {};
@@ -28,24 +28,24 @@ SMSComposer.prototype.showSMSComposer = function(toRecipients, body)
 	if(body)
 		args.body = body;
 	
-	Cordova.exec("SMSComposer.showSMSComposer",args);
+	cordova.exec("___FILEBASENAME___.showSMSComposer",args);
 }
 
-SMSComposer.prototype.showSMSComposerWithCB = function(cbFunction,toRecipients,body)
+___FILEBASENAME___.prototype.showSMSComposerWithCB = function(cbFunction,toRecipients,body)
 {
 	this.resultCallback = cbFunction;
 	this.showSMSComposer.apply(this,[toRecipients,body]);
 }
 
-SMSComposer.prototype._didFinishWithResult = function(res)
+___FILEBASENAME___.prototype._didFinishWithResult = function(res)
 {
 	this.resultCallback(res);
 }
 
-Cordova.addConstructor(function() {
+cordova.addConstructor(function() {
 					   
 					   if(!window.plugins)	{
 					   window.plugins = {};
 					   }
-					   window.plugins.smsComposer = new SMSComposer();
+					   window.plugins.___FILEBASENAME___ = new ___FILEBASENAME___();
 					   });

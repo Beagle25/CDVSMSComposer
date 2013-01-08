@@ -6,8 +6,8 @@
 	<array>
 		<string>public.objective-c-source</string>
 	</array>
-	<key>Description</key>
-	<string>Cordova Plugin Template. Do not use CDVPlugin as your plugin name.</string>
+	<key>Description</
+	<string>Cordova iOS SMSComposer Plugin </string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>

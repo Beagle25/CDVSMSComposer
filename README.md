@@ -11,21 +11,21 @@ Cordova (iOS) Xcode Plugin Template
     $ cd ~/Library/Developer/Xcode/Templates/File\ Templates
     $ git clone https://github.com/RandyMcMillan/CDVSMSComposer.git
 
-![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot.png)
+![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot.png)
 
 ###Usage:
 ####Open your Cordova (iOS) Xcode Project
 
 * Press `<COMMAND+n>`    
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot2.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot2.png)  
 
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot3.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot3.png)  
 
 * Copy the ___FILEBASENAME___.js file to your /www folder
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot4.png)
+    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot4.png)
     
 [Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/index.html)
 
@@ -51,7 +51,7 @@ Cordova (iOS) Xcode Plugin Template
 ### • You will need to add MessageUI.framework to your project if it is not already included.
 
 
-[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/index.html)
 
 
     cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", [args]);

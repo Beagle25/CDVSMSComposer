@@ -6,8 +6,8 @@
 	<array>
 		<string>public.objective-c-source</string>
 	</array>
-	<key>Description</
-	<string>Cordova iOS SMSComposer Plugin </string>
+	<key>Description</key>
+	<string>Cordova iOS SMSComposer Plugin Template.</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>

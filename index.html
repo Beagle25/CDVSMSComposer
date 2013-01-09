@@ -38,10 +38,10 @@
 <h3>Installation:</h3>
 
 <pre><code>$ cd ~/Library/Developer/Xcode/Templates/File\ Templates
-$ git clone https://github.com/RandyMcMillan/CDVEmailComposer.git
+$ git clone https://github.com/RandyMcMillan/CDVSMSComposer.git
 </code></pre>
 
-<p><img src="https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot.png" alt="image"></p>
+<p><img src="https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot.png" alt="image"></p>
 
 <h3>Usage:</h3>
 
@@ -51,20 +51,20 @@ $ git clone https://github.com/RandyMcMillan/CDVEmailComposer.git
 <li>
 <p>Press <code>&lt;COMMAND+n&gt;</code>    </p>
 
-<p><img src="https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot2.png" alt="image"></p>
+<p><img src="https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot2.png" alt="image"></p>
 
-<p><img src="https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot3.png" alt="image"></p>
+<p><img src="https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot3.png" alt="image"></p>
 </li>
 <li>
 <p>Copy the <strong><em>FILEBASENAME</em></strong>.js file to your /www folder</p>
 
-<p><img src="https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot4.png" alt="image"></p>
+<p><img src="https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/ScreenShot4.png" alt="image"></p>
 </li>
-</ul><p><a href="https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html">Sample index.html is included in the generated plugin</a></p>
+</ul><p><a href="https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/index.html">Sample index.html is included in the generated plugin</a></p>
 
 <h4>Add to www/index.html</h4>
 
-<p><code>&lt;script type="text/javascript" charset="utf-8" src="CDVPDFViewer.js"&gt;&lt;/script&gt;</code></p>
+<p><code>&lt;script type="text/javascript" charset="utf-8" src="CDVSMSComposer.js"&gt;&lt;/script&gt;</code></p>
 
 <h5>Add Cordova.plist values</h5>
 
@@ -89,7 +89,7 @@ $ git clone https://github.com/RandyMcMillan/CDVEmailComposer.git
 
 <p><a href="https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html">Sample index.html is included in the generated plugin</a></p>
 
-<pre><code>cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
+<pre><code>cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", [args]);
 </code></pre>
 
 <h4>or</h4>
@@ -97,7 +97,7 @@ $ git clone https://github.com/RandyMcMillan/CDVEmailComposer.git
 <pre><code>function show () {
 
         var args;
-        cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
+        cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", [args]);
 
             }
 </code></pre>

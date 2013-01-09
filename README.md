@@ -18,8 +18,11 @@ Cordova (iOS) Xcode Plugin Template
 
 * Press `<COMMAND+n>`    
 
-    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot2.png)  
+    ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot2.png)    
 
+* Add MessageUI.framework to your project<br>
+
+ 
 
     ![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot3.png)  
 

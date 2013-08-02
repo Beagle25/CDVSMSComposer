@@ -12,7 +12,7 @@
              <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
              -->
             <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
-            <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
+            <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
             
             <script type="text/javascript" charset="utf-8" src="___FILEBASENAME___.js"></script>
             
@@ -29,16 +29,18 @@
                 
                 
                 function onDeviceReady() {
-                    
-                    var args;
-                    cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", [args]);
+                    //cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer",[{"toRecipients":"test","body":"test"}]);
+                    //var args;
+                    //cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", "test1","test2");
                     
                 }
                 
                 function show () {
                     
                     var args;
-                    cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", [args]);
+                    //     window.plugins.___FILEBASENAME___.showSMSComposer(toRecipients, body);
+                    cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer",[args]);
+                    //cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer", "test1","test2");
                     
                 }
                 

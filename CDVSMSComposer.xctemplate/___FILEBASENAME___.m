@@ -9,13 +9,34 @@
 
 @implementation ___FILEBASENAME___
 
+
+/*
+ *
+ *   - (void)myPluginMethod:(CDVInvokedUrlCommand*)command
+ *   {
+ *   // Check command.arguments here.
+ *   [self.commandDelegate runInBackground:^{
+ *   NSString* payload = nil;
+ *   // Some blocking logic...
+ *   CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:payload];
+ *   // The sendPluginResult method is thread-safe.
+ *   [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+ *   }];
+ *   }
+ *
+ */
+
+
+
+
 - (CDVPlugin *)initWithWebView:(UIWebView *)theWebView
 {
 	self = (___FILEBASENAME___ *)[super initWithWebView:theWebView];
 	return self;
 }
 
-- (void)showSMSComposer:(NSArray *)arguments withDict:(NSDictionary *)options
+//- (void)showSMSComposer:(NSArray *)arguments withDict:(NSDictionary *)options
+- (void)showSMSComposer:(CDVInvokedUrlCommand*)command
 {
 	Class messageClass = (NSClassFromString(@"MFMessageComposeViewController"));
 
@@ -39,20 +60,20 @@
 		return;
 	}
 
-	NSString	*body = [options valueForKey:@"body"];
-	NSString	*toRecipientsString = [options valueForKey:@"toRecipients"];
+	NSString	*body = [command.arguments objectAtIndex:0];
+	//NSString	*toRecipientsString = [command.arguments objectAtIndex:1];
 
 	MFMessageComposeViewController *picker = [[MFMessageComposeViewController alloc] init];
 
 	picker.messageComposeDelegate = self;
 
-	if (body != nil) {
-		picker.body = [options valueForKey:@"body"];
-	}
+	//if (body != nil) {
+    picker.body = @"test";///body;//[command.arguments objectAtIndex:0];
+    //	}
 
-	if (toRecipientsString != nil) {
-		[picker setRecipients:[toRecipientsString componentsSeparatedByString:@","]];
-	}
+	//if (toRecipientsString != nil) {
+        //		[picker setRecipients:[toRecipientsString componentsSeparatedByString:@","]];
+        //}
 
 	[self.viewController presentModalViewController:picker animated:YES];
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];	// /This hides the statusbar when the picker is presented -@RandyMcMillan

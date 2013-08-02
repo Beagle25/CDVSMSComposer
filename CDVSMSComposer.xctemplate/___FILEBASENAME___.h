@@ -14,5 +14,7 @@
 
 @interface ___FILEBASENAME___ : CDVPlugin <MFMessageComposeViewControllerDelegate>{}
 
-- (void)showSMSComposer:(NSArray *)arguments withDict:(NSDictionary *)options;
+//- (void)showSMSComposer:(NSArray *)arguments withDict:(NSDictionary *)options;
+- (void)showSMSComposer:(CDVInvokedUrlCommand*)command;
+
 @end

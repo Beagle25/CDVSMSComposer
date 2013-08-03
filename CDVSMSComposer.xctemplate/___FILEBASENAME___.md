@@ -27,11 +27,12 @@ Cordova (iOS) Xcode Plugin Template
 
     ![image](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/ScreenShot4.png)
     
-[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/index.html)
 
 ####Add to www/index.html
 
-`<script type="text/javascript" charset="utf-8" src="CDVPDFViewer.js"></script>`
+`<script type="text/javascript" charset="utf-8" src="___FILEBASENAME___ 
+.js"></script>`
 
 
 
@@ -51,22 +52,30 @@ Cordova (iOS) Xcode Plugin Template
 ### • You will need to add MessageUI.framework to your project if it is not already included.
 
 
-[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVPDFViewer/master/CDVPDFViewer.xctemplate/index.html)
+[Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/index.html)
 
 
-    cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
-
-####or
-
+    function onDeviceReady(){
+                    
+    var recip1 = "1231231234";
+    var recip2 = "2342342344";
+    var body = "This is a body string that is sent to the plugin!";
+    init(recip1,recip2,body);
+                    
+    }
+                
+    function init (recip1,recip2,body) {
+                    
+        cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer",[recip1+","+recip2,body]);
+                    
+    }
+                
     function show () {
                     
-            var args;
-            cordova.exec(null, null, "___FILEBASENAME___", "showEmailComposer", [args]);
+        cordova.exec(null, null, "___FILEBASENAME___", "showSMSComposer",["recip1,recip2","body1"]);
                     
-                }
-
-
-
+    }
+                
 
 <br><br>
 
@@ -95,7 +104,7 @@ The MIT License
 
 
     ___FILEBASENAME___
-    CDVEmailComposer Template Created Jan 7 2013
+    CDVSMSComposer Template Created Jan 7 2013
     Copyright 2013 @RandyMcMillan
 
 

@@ -44,8 +44,8 @@ Cordova (iOS) Xcode Plugin Template
         <param name="ios-package" value="CDVSMSComposer"/>
     </feature>
 
-### • You will need to add MessageUI.framework to your project if it is not already included.
-
+###You will need to add MessageUI.framework to your project if it is not already included.
+![image](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/ScreenShot5.png)
 
 [Sample index.html is included in the generated plugin](https://raw.github.com/RandyMcMillan/CDVSMSComposer/master/CDVSMSComposer.xctemplate/index.html)
 

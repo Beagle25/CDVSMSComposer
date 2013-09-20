@@ -39,14 +39,14 @@ Cordova (iOS) Xcode Plugin Template
 
 
 
-#####Add Cordova.plist values
+####Cordova (iOS) 3.0+
 
-| Key | Type | Value |
-| ------------ |---| ------------- |
-| ___FILEBASENAME___ | String | ___FILEBASENAME___ |
+###Edit the config.xml file
 
-#####Cordova 2.3+ Add config.xml values
-`<plugin name="___FILEBASENAME___" value="___FILEBASENAME___" />`
+    <feature name="CDVSMSComposer">
+        <param name="ios-package" value="CDVSMSComposer"/>
+    </feature>
+
 
 <br>
 
